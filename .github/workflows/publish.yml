@@ -71,7 +71,8 @@ jobs:
               with:
                   image-names: gridcoin-headless-docker
                   cut-off: A week ago UTC
+                  token-type: github-token
                   timestamp-to-use: updated_at
                   account-type: personal
                   keep-at-least: 1
-                  token: ${{ secrets.PAT }}
+                  token: ${{ secrets.GITHUB_TOKEN }}
