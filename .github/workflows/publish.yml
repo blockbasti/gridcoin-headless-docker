@@ -10,6 +10,7 @@ on:
         - cron: '33 3 * * 1'
     push:
         branches: ['master']
+    workflow_dispatch:
 
 env:
     # Use docker.io for Docker Hub if empty
